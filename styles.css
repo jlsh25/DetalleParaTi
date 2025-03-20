@@ -4,7 +4,6 @@
  * Este es una para que puedas dedicar a tu pareja o algun apersona en 
   especial el cual tu quieras mucho y guardaras recuerdos que pasaste con esa persona.
  * 
- * Hecho por: [LuisKinnDC]
  * Fecha: [26 DE FEBRERO]
  * Versión: 1.0
  * 
@@ -59,6 +58,7 @@ body {
     height: 100vh;
     text-align: center;
 }
+
 
 h1 {
     font-size: 2.5rem;
@@ -196,6 +196,7 @@ button:focus, a:focus {
     align-items: center;
     gap: 10px;
 }
+
 
 /* Botón de Hamburguesa */
 .hamburger-button {

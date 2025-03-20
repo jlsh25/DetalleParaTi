@@ -76,13 +76,13 @@ window.addEventListener("load", () => {
     let days = today.getDate() - anniversary.getDate();
 
     // Si el mes actual es anterior al mes de aniversario, restamos 1 año
-    if (months < 0) {
+    if (months < 10) {
       years--;
       months += 12; // Ajustamos los meses a 12 si restamos un año
     }
 
     // Si el día actual es anterior al día de aniversario, restamos 1 mes
-    if (days < 0) {
+    if (days < 18) {
       months--;
       // Ajustamos los días al último día del mes anterior
       const lastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
@@ -97,7 +97,7 @@ window.addEventListener("load", () => {
     // Mostrar el número de años, meses y días en el dashboard
     document.getElementById(
       "daysCount"
-    ).innerText = `Ya han pasado ${years} ${yearText}, ${months} ${monthText} y ${days} ${dayText}, desde que comenzó nuestra historia de amor. Me alegra mucho estar aún a tu lado y disfrutar cada momento, eres la persona que amaré de por vida. ¡Te Amoo❤️!`;
+    ).innerText = `Ya han pasado 5 meses, desde que comenzó nuestra historia de amor. Me alegra mucho estar aún a tu lado y disfrutar cada momento, eres la persona que amaré siempre. ¡Te Amoo❤️!`;
   }
 });
 
@@ -141,13 +141,19 @@ particlesJS("particles-js", {
 });
 
 const mensajes = [
-    "Eres mi razón de sonreír cada día. 💖",
-    "Contigo, cada momento es especial. 🌟",
+    "Eres mi razón de sonreír cada día amor mio. 💖",
+    "Contigo, cada momento es especial, no importa si es solo un minuto vale la pena y es muy especial para mi. 🌟",
     "Tu amor es mi mayor tesoro. 🏆",
     "Eres mi hoy, mi mañana y mi siempre. 🌹",
-    "Gracias por hacerme tan feliz. 😊",
+    "Gracias por hacerme tan feliz por llegar a mi vida. 😊",
     "Eres la mejor parte de mi día. ☀️",
     "Mi corazón late por ti. 💓",
+    "Te amo en todos los universoss. 💓",
+    "Quiero que estes bien y ya. 🌹",
+    "una vida junto a ti es todo lo que podria desear. ☀️",
+    "Eres mi mundo. 💖",
+    
+    
 ];
 
 const mensajeTexto = document.getElementById("mensaje-texto");

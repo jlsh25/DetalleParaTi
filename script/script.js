@@ -29,7 +29,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     e.preventDefault();
     const anniversaryDate = document.getElementById("anniversaryDate").value;
     // Modifica aquí la fecha de tu aniversario - AAAA-MM-DD
-    if (anniversaryDate === "2023-03-20") {
+    if (anniversaryDate === "2024-10-18") {
         // Guardar la fecha de aniversario en localStorage
         localStorage.setItem("anniversaryDate", anniversaryDate);
         window.location.href = "dashboard.html"; // Redirige al dashboard
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return; // No mostrar el tour si ya lo ha visto
     }
 
-    const driver = window.driver.js.driver;
+    const driver = window.driver.js.driver; 
 
     const driverObj = driver({
         showProgress: true,
@@ -82,13 +82,13 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 element: '#toggleDarkMode',
                 popover: {
-                    title: 'Modo Oscuro/Claro',
+                 title: 'Modo Oscuro/Claro',
                     description: 'Haz clic aquí para cambiar entre el modo oscuro y claro.',
                     side: 'bottom',
                     align: 'center'
                 }
             },
-            {
+            {   
                 element: '#anniversaryDate',
                 popover: {
                     title: 'Fecha de Aniversario',
@@ -104,9 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     description: 'Haz clic aquí para enviar el formulario y continuar.',
                     side: 'top',
                     align: 'center'
+ 
                 }
             }
-        ]
+        ] 
     });
 
     console.log('Pasos del tour definidos.');
@@ -116,5 +117,5 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Tour iniciado.');
 
     // Marcar que el usuario ha visto el tour
-    localStorage.setItem('tourVisto', 'true');
+     localStorage.setItem('tourVisto', 'true');
 });
